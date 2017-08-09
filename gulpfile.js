@@ -41,7 +41,7 @@ gulp.task('default', ['copy-html'], function() {
 		packageCache: {}
 	})
 	.plugin(tsify)
-	.bundleAll()
+	.bundle()
 	.pipe(source(APP_NAME))
 	.pipe(gulp.dest('dist'));
 });

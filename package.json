@@ -1,8 +1,8 @@
 {
-  "name": "spokstrap",
+  "name": "spokhub",
   "version": "0.0.1",
   "description": "An intrinsic wrapper for basic functionality",
-  "main": "main.js",
+  "main": "dist/spokhub.js",
   "scripts": {
     "test": "npm test"
   },
