@@ -6,6 +6,7 @@ var tsify = require('tsify');
 var del = require('del');
 var gutil = require('gulp-util');
 var paths = { pages: [ 'src/*.html', 'src/*.json', 'src/*.css' ]};
+var outfiles = { pages: [ 'dist/index.html', 'dist/features.json', 'dist/spokhub.css', 'dist/spokhub.js' ]};
 var APP_NAME = 'spokhub.js';
 
 var watcher = watchify(browserify({
@@ -30,6 +31,10 @@ function runAll() {
 
 gulp.task('copy-html', function() {
 	return gulp.src(paths.pages).pipe(gulp.dest('dist'));
+});
+
+gulp.task('orchestrate', function() {
+	return gulp.src(outfiles.pages).pipe(gulp.dest('../../ccp-orchestrator/docker/proxy_public/'));
 });
 
 gulp.task('default', ['copy-html'], function() {

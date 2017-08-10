@@ -20,5 +20,10 @@
         "label" : "Messages",
         "url" : "https://local.spokci.com/web-messaging",
         "level" : 400
+    },
+    "Google" : {
+        "label" : "Google Images",
+        "url" : "https://www.google.com/images",
+        "level" : 400
     }
 }

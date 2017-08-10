@@ -17,7 +17,7 @@ let menu_factory = new MenuItemFactory();
 let navlist = document.createElement('ul');
 
 /** This would call a service over http to GET the features object  */
-axios.get('./features.json').then((res) => {
+axios.get('/features.json').then((res) => {
     Object.keys(res.data).forEach((item) => {
         navlist.appendChild(menu_factory.makeNavItem(res.data[item]));
     });

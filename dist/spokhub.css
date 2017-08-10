@@ -42,9 +42,11 @@
 	background:#ddd
 }
 
-#navigation ul li:hover
+#navigation ul li:hover,
+#navigation ul li a:focus
 {
-	background:#f6f6f6
+	background:#f6f6f6;
+	color:#34333c;
 }
 
 #navigation ul li:hover a {
@@ -58,7 +60,8 @@
 	top:100%;
 	left:0;
 	background:#fff;
-	padding:0
+	padding:0;
+	z-index: 250000;
 }
 
 #navigation ul ul li
@@ -80,7 +83,8 @@
 	left:100%
 }
 
-#navigation ul li:hover > ul
+#navigation ul li:hover > ul,
+#navigation ul a:focus + ul
 {
 	display:block
 }
