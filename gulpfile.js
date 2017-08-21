@@ -79,11 +79,9 @@ gulp.task('watch', ['copy-html'], bundleAll);
 watcher.on('update', runAll);
 watcher.on('log', gutil.log);
 
+/* broke */
 gulp.task('serve', function(){
-	gulp.src('dist/').pipe(webserver({
-		livereload: true,
-		host: "127.0.0.1",
-		port: 4200,
+	gulp.src('dist').pipe(webserver({
 		directoryListing: true,
 		open: true
 	}));

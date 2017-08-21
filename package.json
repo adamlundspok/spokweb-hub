@@ -21,7 +21,7 @@
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.2.1",
     "gulp-util": "^3.0.8",
-    "gulp-webserver": "^0.9.1",
+    "http-server": "^0.10.0",
     "tsify": "^3.0.1",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.9.0"
