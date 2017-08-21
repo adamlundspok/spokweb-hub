@@ -11,7 +11,7 @@ export class SpokHubNavBar {
     
         constructor(rootSelector: string) {
     
-            // Ordinarily first thing is to get the current user
+            // Ordinarily first thing is to get the current user -- stub it in for now
             this.current_user = new CurrentUser('Adam', 'Lund', 400);
     
             this.menu_factory = new MenuItemFactory();

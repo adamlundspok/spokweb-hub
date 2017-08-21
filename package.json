@@ -4,7 +4,10 @@
   "description": "An intrinsic wrapper for basic functionality",
   "main": "dist/spokhub.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "build": "gulp",
+    "clean": "gulp clean",
+    "watch": "gulp watch"
   },
   "author": "Adam Lund",
   "license": "ISC",

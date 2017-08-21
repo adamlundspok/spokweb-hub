@@ -11,6 +11,8 @@ var paths = { pages: [ 'src/*.html', 'src/*.json', 'src/*.css' ], dirs: [ "src/o
 var outfiles = { pages: [ 'dist/index.html', 'dist/config-nav.json', 'dist/spokhub.css', 'dist/spokhub.js', 'dist/organization/**', 'dist/web-messaging/**' ]};
 var APP_NAME = 'spokhub.js';
 
+var orchestrator_relative_location = '../../ccp-orchestrator/docker/proxy_public/';
+
 var watcher = watchify(browserify({
 		basedir: '.',
 		debug: true,
@@ -38,7 +40,7 @@ gulp.task('copy-html', function() {
 });
 
 gulp.task('orchestrate', function() {
-	return gulp.src(outfiles.pages, {base:"./dist"}).pipe(gulp.dest('../../ccp-orchestrator/docker/proxy_public/'));
+	return gulp.src(outfiles.pages, {base:"./dist"}).pipe(gulp.dest(orchestrator_relative_location));
 });
 
 gulp.task('build', function() {
