@@ -1,0 +1,33 @@
+{
+    "organization" : {
+        "label" : "Organization",
+        "url" : "/organization",
+        "definition" : "features/organization.json",
+        "level" : 300,
+        "features" : {
+            "manage_customers" : {
+                "label" : "Manage Users",
+                "url" : "/organization/users",
+                "level" : 200
+            },
+            "manage_users" : {
+                "label" : "Manage Customers",
+                "url" : "/organization/customers",
+                "level" : 100
+            }
+        }
+    },
+    "messaging" : {
+        "label" : "Messages",
+        "url" : "/web-messaging",
+        "definition" : "features/web-messaging.json",
+        "level" : 400
+    },
+    "scheduling" : {
+        "label" : "Scheduling",
+        "url" : "/schedules",
+        "definition" : "features/scheduling.json",
+        "level" : 300
+    }
+
+}

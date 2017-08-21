@@ -1,0 +1,1141 @@
+li.recipient-list-item {
+  min-width: 100px;
+  max-width: 150px;
+}
+.person-block {
+  padding-right: 1.0rem;
+  padding-top: 1.0rem;
+}
+
+.person-name {
+  color: black;
+  cursor: text;
+  text-decoration: none;
+  font-weight: 600;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+  width: 8.5rem;
+}
+
+.person-name:hover {
+  color: black;
+  cursor: text;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+span.person-remove-button {
+  color: #990700;
+  cursor: pointer;
+  padding-left: 0.2rem;
+}
+.alert-sidebar-critical {
+  background-color: red;
+}
+
+.thread-picker-text {
+  height: 22px;
+  font: 20px OpenSans, sans-serif;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.thread-picker {
+  height: 70px;
+  border: 1px solid transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.thread-info-container {
+  height: 10%;
+  border-bottom: 1px solid #CCC;
+}
+
+.message-author {
+  color: rgba(0, 0, 0, 0.55);
+  font: 1.2rem OpenSans, sans-serif;
+  font-weight: 600;
+  height: 20px;
+  line-height: 100%;
+  white-space: nowrap;
+}
+
+.space-filler {
+  min-height: 30px;
+}
+
+.fill-height {
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.col-md-9,
+.col-md-3,
+.col-md-12 {
+  padding: 0;
+  margin: 0;
+}
+div.recipient-list-container {
+  clear: both;
+  padding-top: 1.5rem;
+}
+
+div.search-container {
+  padding-top: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul.recipient-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 630px;
+}
+
+div.awesomplete {
+  display: block;
+}
+
+input.user-search-input {
+  background: none transparent;
+  border: 0 none transparent;
+  border-bottom: solid 1px darkgray;
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  min-width: 580px;
+  padding-bottom: 1.2rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  outline: none;
+  width: 100%;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-compose-open {
+  cursor: pointer;
+  height: 2.25rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%) rotate(-90deg);
+          transform: translate(0%, -50%) rotate(-90deg);
+  width: 2.25rem;
+}
+
+.icon-compose-open:hover {
+  fill: white;
+}
+
+.icon-compose-close {
+  cursor: pointer;
+  height: 2.25rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 2.25rem;
+}
+
+.icon-compose-close:hover {
+  fill: white;
+}
+
+.icon-information {
+  cursor: pointer;
+  height: 2.6rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 2.6rem;
+}
+
+.icon-information:hover {
+  opacity: 0.60;
+}
+
+.icon-arrow-left {
+  cursor: pointer;
+  height: 2.6rem;
+  left: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 2.6rem;
+}
+
+.icon-arrow-left:hover {
+  opacity: 0.60;
+}
+
+.icon-send-message {
+  cursor: inherit;
+  height: 2.25rem;
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+          transform: scale(-1, 1) rotate(180deg);
+  width: 2.25rem;
+}
+
+.icon-messages-bubble {
+  cursor: pointer;
+  height: 2.25rem;
+  width: 2.25rem;
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+          transform: scale(-1, 1) rotate(180deg);
+}
+
+.icon-thread-arrow {
+  cursor: default;
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon-inbox-splash {
+  cursor: default;
+  height: 12rem;
+  width: 12rem;
+}
+
+.icon-compose-splash {
+  cursor: pointer;
+  height: 2.5rem;
+  -webkit-transform: rotate(-90deg) translate(0, 0.5rem);
+          transform: rotate(-90deg) translate(0, 0.5rem);
+  width: 2.5rem;
+}
+
+.icon-compose-splash:hover {
+  opacity: 0.60;
+}
+
+.icon-person-remove {
+  cursor: pointer;
+  fill: maroon;
+  height: 1.8rem;
+  -webkit-transform: translate(0.4rem, 0.5rem);
+          transform: translate(0.4rem, 0.5rem);
+  width: 1.8rem;
+}
+
+.icon-person-remove:hover {
+  opacity: 0.70;
+}
+
+.icon-loading {
+  cursor: default;
+  height: 4rem;
+  width: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 0 none transparent;
+}
+
+button span {
+  display: none !important;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+input:-moz-placeholder {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  background: #f0f0f0;
+  font-size: 1.4rem;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav,
+aside,
+#main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* -----------------------------------------------------
+	Main column layout
+-------------------------------------------------------*/
+.colHeader {
+  position: relative;
+  font-size: 2rem;
+  padding: 2rem;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  background: #fff;
+}
+
+.flexContainer {
+  display: -webkit-flex;
+  -webkit-align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 100%;
+}
+
+.flexContainer > nav {
+  z-index: 11;
+}
+
+aside {
+  max-width: 450px;
+  min-width: 350px;
+  -webkit-box-shadow: 0 -4px 7px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 -4px 7px 3px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav,
+aside {
+  background: #fff;
+}
+
+nav .colHeader,
+aside .colHeader {
+  background: #08E8F9;
+}
+
+/* -----------------------------------------------------
+	Nav/Profile bar
+-------------------------------------------------------*/
+nav .userAvatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #f0f0f0;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 3.75rem;
+  margin: 2rem auto;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  position: relative;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.75);
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+nav li svg {
+  top: 0.7rem;
+  fill: rgba(0, 0, 0, 0.75);
+}
+
+nav li span {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+nav i {
+  position: absolute;
+  font-size: 160%;
+  left: 1rem;
+}
+
+nav li:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
+nav li.active {
+  background-color: #f0f0f0;
+}
+
+/* -----------------------------------------------------
+	Inbox structure
+
+	--- use flexbox again vertically to force full
+			height and account for search
+-------------------------------------------------------*/
+#inbox {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  border-left: 1px solid #dfdfdf;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#inbox li {
+  position: relative;
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 1rem 3rem 1rem 7rem;
+  border-bottom: 1px solid #dfdfdf;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+#inbox li h3 {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.75);
+  max-width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#inbox li h5 {
+  position: absolute;
+  font-size: 1rem;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.75);
+  top: 1rem;
+  right: 3rem;
+}
+
+#inbox li p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.67;
+  color: rgba(0, 0, 0, 0.55);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#inbox li .userAvatar {
+  position: absolute;
+  left: 3rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #f0f0f0;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+#inbox li .userAvatar span {
+  top: 0.5rem;
+  font-size: 1.6rem;
+}
+
+#inbox li svg {
+  position: absolute;
+  top: 40%;
+  right: 0.5rem;
+  fill: rgba(0, 0, 0, 0.55);
+  -webkit-transition: right 0.2s ease;
+  transition: right 0.2s ease;
+}
+
+#inbox li.hasNewContent h3 {
+  font-weight: 700;
+}
+
+#inbox li.hasNewContent:before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: #08E8F9;
+}
+
+#inbox li.active {
+  background-color: #f0f0f0;
+}
+
+#inbox li:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
+#inbox li:hover svg {
+  right: 0.3rem;
+}
+
+/* -----------------------------------------------------
+	Message Threads & Compose
+
+	--- use flexbox vertically to allow
+			scroll area to be the correct height
+
+	--- remember to set a class on #main is required
+			to get the correct structure in this section
+			1. .isMessageThread
+			2. .isComposeNewMessage
+-------------------------------------------------------*/
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 7;
+}
+
+#main .colHeader {
+  -webkit-box-shadow: 0 -4px 9px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -4px 9px 3px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+#main .colHeader span {
+  display: block;
+  max-width: 720px;
+}
+
+#messageWrapper,
+#composeWrapper {
+  overflow-y: auto;
+}
+
+@-webkit-keyframes showMessage {
+  0% {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes showMessage {
+  0% {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#messageWrapper {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#messageWrapper #messages {
+  margin: 0 2rem 2rem 2rem;
+  padding: 1rem 0 0 0;
+  border-left: 1px solid #dfdfdf;
+  max-width: 700px;
+  min-width: 375px;
+}
+
+#messageWrapper section {
+  position: relative;
+  max-width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 2px rgba(29, 27, 31, 0.06);
+          box-shadow: 0 0 10px 2px rgba(29, 27, 31, 0.06);
+  border-radius: 6px;
+  margin: 1rem 0 2rem 2rem;
+  -webkit-animation: showMessage 0.5s ease-out;
+          animation: showMessage 0.5s ease-out;
+}
+
+#messageWrapper section .chatBlock {
+  position: relative;
+  padding: 1rem 1rem 1rem 6rem;
+  min-height: 6rem;
+  min-width: 30rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#messageWrapper section h4,
+#messageWrapper section h5 {
+  font-size: 1.2rem;
+  line-height: 100%;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+#messageWrapper section h5 {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+#messageWrapper section p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.43;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 0.5rem 0 0 0;
+  word-wrap: break-word;
+}
+
+#messageWrapper section .userAvatar {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #f0f0f0;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+#messageWrapper section .userAvatar span {
+  top: 0.7rem;
+  font-size: 1.9rem;
+}
+
+#messageWrapper section:before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  background-color: #dfdfdf;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#messageWrapper section:after {
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#messageWrapper section.myMessage {
+  margin-left: 5rem;
+  background-color: #08E8F9;
+}
+
+#messageWrapper section.myMessage .chatBlock {
+  padding-left: 3rem;
+}
+
+#messageWrapper section.myMessage .userAvatar {
+  display: none;
+}
+
+#messageWrapper section.myMessage:before {
+  left: -24px;
+}
+
+#messageWrapper section.myMessage:after {
+  content: "";
+  position: absolute;
+  left: -5rem;
+  top: 50%;
+  width: 29px;
+  height: 1px;
+  opacity: 1;
+  background-color: #dfdfdf;
+}
+
+#messageWrapper section.isTyping {
+  border-radius: 18px;
+  max-width: 5.5rem;
+}
+
+#messageWrapper section.isTyping .chatBlock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translatey(2rem);
+          transform: translatey(2rem);
+  opacity: 0;
+}
+
+#messageWrapper section.isTyping:before {
+  opacity: 0;
+}
+
+#messageWrapper section.isTyping:after {
+  content: "";
+  display: block;
+  height: 3rem;
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  opacity: 1;
+  background: transparent url(/web-messaging/lib/images/elipses_white.gif) center center no-repeat;
+  background-size: 60%;
+}
+
+.isComposeNewMessage .colHeader {
+  background: #08E8F9;
+}
+
+.emptyWrapper {
+  margin: 8rem 2rem 2rem 2rem;
+  text-align: center;
+  max-width: 700px;
+}
+
+.emptyWrapper h2 {
+  padding-top: 2rem;
+}
+
+.emptyWrapper h3 {
+  padding-top: 2rem;
+}
+
+.emptyWrapper span {
+  padding-left: 1.8rem;
+}
+
+#composeSearch {
+  position: relative;
+  margin: 2rem 2rem 0 0;
+  max-width: 700px;
+  min-width: 375px;
+}
+
+#composeSearch input {
+  display: block;
+  width: 100%;
+  background: none transparent;
+  border: 0 none transparent;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dfdfdf;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#composeSearch input:focus {
+  border-bottom-color: rgba(0, 0, 0, 0.55);
+}
+
+#composeSearch svg {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  font-size: 2.5rem;
+  fill: #dfdfdf;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: default;
+  fill: rgba(0, 0, 0, 0.55);
+  height: 2.5rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 2.5rem;
+}
+
+#composeWrapper {
+  padding-top: 2rem;
+}
+
+#composeWrapper section {
+  margin: 0 2rem 2rem 2rem;
+  max-width: 700px;
+  min-width: 375px;
+}
+
+#composeWrapper li {
+  position: relative;
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 1rem 2rem 1rem 6rem;
+  border-bottom: 1px solid #dfdfdf;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+#composeWrapper h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+#composeWrapper h4 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+#composeWrapper h4:before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.4rem;
+  margin-bottom: 2px;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.4rem;
+  background-color: #cdcdcd;
+}
+
+#composeWrapper p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #737373;
+}
+
+#composeWrapper .userStatusMessage {
+  display: block;
+}
+
+#composeWrapper .userStatusMessage:before {
+  content: 'Offline: ';
+}
+
+#composeWrapper .userAvatar {
+  position: absolute;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #f0f0f0;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 3rem;
+}
+
+#composeWrapper button {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 2.5rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#composeWrapper .highlight {
+  background-color: rgba(8, 232, 249, 0.3);
+}
+
+#composeWrapper li.userIsAway h4:before {
+  background-color: #FFCB31;
+}
+
+#composeWrapper li.userIsAway .userStatusMessage:before {
+  content: 'Away: ';
+}
+
+#composeWrapper li.userIsAvailable h4:before {
+  background-color: #04D50B;
+}
+
+#composeWrapper li.userIsAvailable .userStatusMessage:before {
+  content: 'Available: ';
+}
+
+#composeWrapper #myFavorites ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#composeWrapper #myFavorites li {
+  text-align: center;
+  border: 0 none transparent;
+  padding: 0 1rem;
+  margin: 0;
+  max-width: 150px;
+}
+
+#composeWrapper #myFavorites button,
+#composeWrapper #myFavorites p,
+#composeWrapper #myFavorites h4:before {
+  display: none;
+}
+
+#composeWrapper #myFavorites .userAvatar {
+  position: relative;
+  margin: 0 auto;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 3.75rem;
+}
+
+#composeWrapper #myFavorites .userAvatar:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: #cdcdcd;
+  border: 1px solid #fff;
+}
+
+#composeWrapper #myFavorites h4 {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+#composeWrapper #myFavorites li.userIsAway .userAvatar:before {
+  background-color: #FFCB31;
+}
+
+#composeWrapper #myFavorites li.userIsAvailable .userAvatar:before {
+  background-color: #04D50B;
+}
+
+#messageTextInput #inputWrapper {
+  max-width: 740px;
+  padding: 0.5rem 7rem 2rem 2rem;
+}
+
+#messageTextInput textarea {
+  resize: none;
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: 2px solid #dfdfdf;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#messageTextInput textarea:focus {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+#messageTextInput button {
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  background-color: #08E8F9;
+  border: 0 none transparent;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  padding-bottom: 0.4rem;
+  padding-right: 0.4rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#messageTextInput button.enabled {
+  cursor: pointer;
+}
+
+#messageTextInput button.enabled:hover {
+  -webkit-box-shadow: inset 0 0 15px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+#messageTextInput button.disabled {
+  cursor: default;
+}
+
+@media only screen and (max-width: 800px) {
+  nav .userAvatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+  }
+  nav li span {
+    display: none;
+  }
+  nav li i {
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+}
+
+.search-recipient-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: auto;
+  margin-left: 4rem;
+}
+
+.thread-recipients {
+  font: 16px OpenSans, sans-serif;
+  font-weight: bold;
+  padding-left: 80px;
+  padding-top: 20px;
+}
+
+.float-left {
+  float: left;
+}
+
+.input-text {
+  background-color: #ffffff;
+  border: solid 2px #dfdfdf;
+  color: rgba(0, 0, 0, 0.4);
+  font: 16px OpenSans, sans-serif;
+}

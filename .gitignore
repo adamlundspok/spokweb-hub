@@ -5,6 +5,7 @@
 /out-tsc
 /artifacts
 /docker/dist
+/dist
 
 # dependencies
 /node_modules

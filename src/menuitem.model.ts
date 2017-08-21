@@ -15,7 +15,7 @@ export class MenuItem {
             el.innerText = this.label || this.DEFAULT_LABEL;
             return el;
         } else {
-            let label = document.createElement('span');
+            let label = document.createElement('label');
             label.innerText = this.label || this.DEFAULT_LABEL;
             return label;
         }

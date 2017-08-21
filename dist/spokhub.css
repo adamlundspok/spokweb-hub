@@ -1,5 +1,18 @@
+html, body, ** {
+	box-sizing: border-box;  
+}
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
 #navigation {
-    background-color: #cecece;
+	background-color: #cecece;
+	display: flex;
+	flex-direction: row;
+
     padding-left: 20px;
     padding-right: 20px;
     color: #efefef;
@@ -8,16 +21,28 @@
     height: 36px;
 }
 
-#navigation ul
-{
+#navigation div.menu-left {
+	text-align:left;
+	flex: 1;
+}
+
+#navigation div.menu-user {
+	text-align:left;
+}
+
+#navigation ul {
+	list-style-type:none;
 	list-style:none;
-	position:relative;
-	float:left;
 	margin:0;
 	padding:0
 }
 
-#navigation ul a
+#navigation > ul {
+	position:relative;
+}
+
+#navigation ul a,
+#navigation ul label
 {
 	display:block;
 	color:#efefef;
@@ -37,6 +62,10 @@
 	padding:0
 }
 
+#navigation .menu-user > ul > li {
+	text-align:right;
+}
+
 #navigation ul li.current-menu-item
 {
 	background:#ddd
@@ -49,7 +78,8 @@
 	color:#34333c;
 }
 
-#navigation ul li:hover a {
+#navigation ul li:hover a,
+#navigation ul li:hover label {
     color:#34333c;
 }
 
@@ -62,6 +92,12 @@
 	background:#fff;
 	padding:0;
 	z-index: 250000;
+}
+
+#navigation .menu-user ul ul
+{
+	position:relative;
+	text-align:left;
 }
 
 #navigation ul ul li

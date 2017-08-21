@@ -5,8 +5,10 @@ var watchify = require('watchify');
 var tsify = require('tsify');
 var del = require('del');
 var gutil = require('gulp-util');
-var paths = { pages: [ 'src/*.html', 'src/*.json', 'src/*.css' ]};
-var outfiles = { pages: [ 'dist/index.html', 'dist/features.json', 'dist/spokhub.css', 'dist/spokhub.js' ]};
+var webserver = require('gulp-webserver');
+
+var paths = { pages: [ 'src/*.html', 'src/*.json', 'src/*.css' ], dirs: [ "src/organization/**", "src/web-messaging/**", "src/features/**" ]};
+var outfiles = { pages: [ 'dist/index.html', 'dist/config-nav.json', 'dist/spokhub.css', 'dist/spokhub.js', 'dist/organization/**', 'dist/web-messaging/**' ]};
 var APP_NAME = 'spokhub.js';
 
 var watcher = watchify(browserify({
@@ -25,16 +27,32 @@ function bundleAll() {
 }
 
 function runAll() {
+	console.log('runall called');
 	gulp.src(paths.pages).pipe(gulp.dest('dist'));
 	return bundleAll();
 }
 
 gulp.task('copy-html', function() {
-	return gulp.src(paths.pages).pipe(gulp.dest('dist'));
+	var combo = paths.pages.concat(paths.dirs);
+	return gulp.src(combo, {base:"./src"}).pipe(gulp.dest('dist'));
 });
 
 gulp.task('orchestrate', function() {
-	return gulp.src(outfiles.pages).pipe(gulp.dest('../../ccp-orchestrator/docker/proxy_public/'));
+	return gulp.src(outfiles.pages, {base:"./dist"}).pipe(gulp.dest('../../ccp-orchestrator/docker/proxy_public/'));
+});
+
+gulp.task('build', function() {
+	return browserify({
+		basedir: '.',
+		debug: true,
+		entries: ['src/main.ts'],
+		cache: {},
+		packageCache: {}
+	})
+	.plugin(tsify)
+	.bundle()
+	.pipe(source(APP_NAME))
+	.pipe(gulp.dest('dist'));
 });
 
 gulp.task('default', ['copy-html'], function() {
@@ -58,3 +76,13 @@ gulp.task('clean', function() {
 gulp.task('watch', ['copy-html'], bundleAll);
 watcher.on('update', runAll);
 watcher.on('log', gutil.log);
+
+gulp.task('serve', function(){
+	gulp.src('dist/').pipe(webserver({
+		livereload: true,
+		host: "127.0.0.1",
+		port: 4200,
+		directoryListing: true,
+		open: true
+	}));
+});
